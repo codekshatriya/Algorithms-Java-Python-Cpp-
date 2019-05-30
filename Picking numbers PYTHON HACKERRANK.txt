@@ -1,0 +1,20 @@
+LINK->  https://www.hackerrank.com/challenges/picking-numbers/problem
+
+CODE->
+
+def pickingNumbers(l):
+    maximum=0
+    for i in l:
+        c=l.count(i)
+        d=l.count(i-1)
+        c=c+d
+        if c > maximum:
+            maximum=c
+    return maximum
+
+n = int(input().strip())
+
+a = list(map(int, input().rstrip().split()))
+
+result = pickingNumbers(a)
+print(result)

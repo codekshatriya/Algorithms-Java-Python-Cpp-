@@ -1,0 +1,27 @@
+LINK->	https://www.hackerrank.com/challenges/diagonal-difference/problem
+
+CODE->
+
+def diagonalDifference(arr):
+    lsum = rsum = 0;
+    k = 1
+    for i in range(len(arr)):
+        for j in range(len(arr[0])):
+            if i == j:
+                lsum += arr[i][j]
+    for i in arr:
+        rsum += i[-1 * k]
+        k += 1
+    return abs(lsum - rsum)
+
+
+
+n = int(input())
+
+arr = []
+
+for _ in range(n):
+    arr.append(list(map(int, input().rstrip().split())))
+
+result = diagonalDifference(arr)
+print(result)

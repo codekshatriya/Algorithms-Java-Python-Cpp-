@@ -1,5 +1,5 @@
 package p1;
-//Recursive Factorial Calculator, developed by Harshvardhan Singh(harshvardhan.singh22dec@gmail.com)
+//Recursive Factorial Calculator, developed by Harshvardhan Singh(harshvs.official223@gmail.com)
 //Created on Intellij idea,25 December 2019
 import java.util.Scanner;
 public class FactRecurs{
